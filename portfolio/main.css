@@ -35,7 +35,10 @@ img{
 }
 @font-face {
   font-family: The Historia Demo;
-  src: url(TheHistoriaDemo.ttf);
+  src: url(fonts/TheHistoriaDemo.ttf);
+}
+header{
+	overflow: hidden;
 }
 /*End global*/
 
