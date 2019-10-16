@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+}
+
+
+:root{
+	--gradiant: linear-gradient(to bottom, #ffbb09, #ff512fb8);
+}
+
+header {
+	background: var(--gradiant);
+}
+
+.masVistaTitu {
+
+    width: 100%;
+    z-index: 1;
+    bottom: 0;
+    background: #343a40b8;
+    color: #d6d6d6;
+    text-align: center;
+    font-weight: 300;
+}

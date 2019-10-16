@@ -1,0 +1,48 @@
+*{
+	box-sizing: border-box;
+}
+header{
+	background-color: white;
+	font-weight: bold;
+	z-index: 999;
+}
+.cover{
+	padding: 11rem;
+	background-image: url(assets/doctor-dental.jpg);
+	background-color: #fff;
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 1;
+}
+.cover .bg-primary{
+	animation: pulse 2s infinite;
+}
+
+.img-ser img.bg-primary {
+    background-color: #2dcbbe;
+    padding: 26px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2dcbbe;
+    border-radius: 50% 50% 50% 50%/30% 30% 70% 70%;
+    overflow: hidden;
+    transform: rotate(0deg);
+    max-width: 120px;
+
+}
+
+	
+/*Start animations*/
+@keyframes pulse{
+	0% {
+		box-shadow: 0 0 0 0 rgb(0, 123, 255);
+	}
+	70% {
+		box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+	}
+}
+/*End animations*/

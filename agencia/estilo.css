@@ -1,0 +1,231 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+i{
+	color: #fff;
+}
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar{
+	background-image: linear-gradient(to right, #a517ba, #5f1782);
+	padding: 0 !important;
+}
+.navbar-brand img{
+	height: 40px;
+	padding-left: 2rem;
+}
+.navbar li{
+	padding: 0 10px;
+}
+.navbar li a{
+	color: #fff !important;
+	font-weight: 600;
+	float: right;
+	text-align: left;
+}
+.fa-bars{
+	color: #fff;
+	font-size: 30px !important;
+}
+.navbar-toggler{
+	outline: none !important;
+}
+/**************** Banner section ******************/
+
+#banner{
+	background-image: linear-gradient(to right, #a517ba, #5f1782);
+	color: #fff;
+    padding-top: 5%;
+
+}
+.titulo-promo{
+	font-size: 2rem;
+	font-weight: 600;
+	margin-top: 6.1rem;
+}
+.play-btn{
+	width: 45px;
+	margin: 20px;
+}
+.fa-play-circle{
+	font-size: 3rem;
+	margin-right: 1.5rem;
+	vertical-align:middle;
+}
+#banner a{
+	color: #fff;
+	text-decoration: none;
+}
+.img-pie{
+	width: 100%;
+}
+/****************** Servicios ********************/
+
+#servicios{
+	padding: 80px 0;
+}
+
+.servicios-img{
+	width: 10.1rem;
+	margin-top: 1rem;
+}
+
+.servicios h4 {
+    padding: 0.5rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.titulo::before{
+	content: '';
+	height: 5px;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #7b1798;
+	display: block;
+	transform: translateY(63px);
+
+}
+.titulo::after{
+	content: '';
+	height: 10px;
+	width: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 40px;
+	background-color: #7b1798;
+	display: block;
+	transform: translateY(8px);
+
+}
+
+#servicios .btn-primary{
+	box-shadow: none;
+	padding: 8px 25px;
+	border: none;
+	border-radius: 20px;
+	background-image: linear-gradient(to right, #a517ba, #5f1782);
+
+}
+/****************** Nosotros section ********************/
+
+#nosotros{
+	background-color: #f8f9fa;
+	margin-bottom: 50px;
+	padding-top: 50px;
+}
+.nosotros-titulo{
+	font-size: 40px;
+	font-weight: 600;
+	margin-top: 8%;
+}
+#nosotros ul li{
+	 margin: 10px 0;
+}
+#nosotros ul{
+	 margin-left: 20px;
+}
+/****************** Clientes section ********************/
+
+#clientes{
+	margin: 100px 0;
+}
+
+.opinion{
+	border-left: 4px solid #7b1798;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.opinion img{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	margin: 0 10px;
+	object-fit: cover;
+}
+.detalle-usuario{
+	display: inline-block;
+	font-size: 12px;
+}
+
+/****************** Redes section ********************/
+#redes{
+	 background-color: #f8f9fa;
+	 padding: 100px 0;
+}
+#redes p {
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.social-icon img{
+	width: 60px;
+	transition: 0.5s;
+}
+.social-icon a:hover img{
+	transform: translateY(-10px);
+}
+/****************** Footer section ********************/
+
+#footer{
+	background-image: linear-gradient(to right, #a517ba, #5f1782);
+	color: #fff;
+}
+.footer-img{
+	width: 100%
+}
+
+.footer-box{
+	padding: 20px;
+}
+
+.footer-box img{
+	width: 120px;
+	margin-bottom: 20px;
+}
+.footer-box .fas{
+	background-image: linear-gradient(to right, #a517ba, #5f1782);
+	margin-right: 8px;
+	font-size: 25px;
+	width: 40px;
+	height: 40px;
+	padding-top: 7px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+.footer-box .form-control{
+	box-shadow: none !important;
+	border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+
+}
+
+.footer-box .btn-primary{
+	box-shadow: none !important;
+	border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+hr{
+	background-color: #fff;
+}
+
+.copyright{
+	margin-bottom: 0;
+	text-align: center;
+	padding-bottom: 20px;
+}
