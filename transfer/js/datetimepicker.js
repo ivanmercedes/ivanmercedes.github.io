@@ -1,3 +1,5 @@
+// http://t00rk.github.io/bootstrap-material-datetimepicker/
+
 (function ($, moment)
 {
    var pluginName = "bootstrapMaterialDatePicker";

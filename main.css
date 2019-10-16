@@ -596,18 +596,18 @@ textarea{
 	border: none;
 	outline-color: #fd57bf;
 }
-input[type="submit"]{
-	width: initial;
-	background-color: #fd57bf;
-	color: #eee;
-	padding: 1rem 2rem;
-	border-radius: .8rem;
-	cursor: pointer;
-	transition: background-color 650ms;
+input[type="submit"] {
+    width: initial;
+    background-color: #ffffff;
+    color: #000;
+    padding: 1rem 3rem;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 650ms;
 }
 input[type="submit"]:hover{
 	background-color: #ffe838;
-	color: #221e3f;
+	color: #fff;
 
 }
 /*End contact*/
@@ -645,7 +645,7 @@ input[type="submit"]:hover{
 /*Start animations*/
 @keyframes pulse{
 	0% {
-		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+		box-shadow: 0 0 0 0 rgba(253, 252, 253, 0.99);
 	}
 	70% {
 		box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
