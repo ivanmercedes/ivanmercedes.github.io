@@ -21,11 +21,11 @@ $(document).ready(function () {
      , options:2000});
 	});
 
-   AOS.init({
-   	 easing: 'ease',
-   	 duraction: 1800,
-     once: true
-   });
+   // AOS.init({
+   // 	 easing: 'ease',
+   // 	 duraction: 1800,
+   //   once: true
+   // });
     
     // var desc = $.map($('.element'), function(el) { return $(el).text(); });
 
@@ -39,7 +39,7 @@ $(document).ready(function () {
     //     loopCount: true,
     // });
     
-    let desc = $.map($('.element'), function(el) { return $(el).text(); });
+    // let desc = $.map($('.element'), function(el) { return $(el).text(); });
     // $(".element").typed({
     //     strings: ['Tu página web en manos de un profesional', 'Creacion en WordPress de Temas y Plugins', 'Creacion de aplicaciones para Android', 'Diseño y Desarrollo de Sitios Web'],
     //     typeSpeed: 30,
