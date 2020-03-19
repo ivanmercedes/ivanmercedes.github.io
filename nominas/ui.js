@@ -48,12 +48,12 @@
     mostrarDatosHtml(){
         api.obtenerDatos()
         .then(datos=>{
-           // this.cargadoDatos();
-           //setTimeout(()=>{
-             //  app.querySelector('div').remove();
+            this.cargadoDatos();
+           setTimeout(()=>{
+               app.querySelector('div').remove();
                 this.estadisticas(datos);
                 this.insetarTabla(datos);
-           //},3000);
+           },3000);
           
         });
      }
