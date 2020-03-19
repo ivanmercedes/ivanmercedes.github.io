@@ -76,12 +76,12 @@
          
          const col = `
           <div class="col-md-3">
-            <div class="bg-white p-4 shadow-lg rounded text-center">
+            <div class="bg-white p-4 shadow-lg rounded text-center mb-4 mb-lg-0">
               <span class="h2"><i class="fas fa-users"></i> ${info.datos.length}</span>
             </div> 
           </div>
           <div class="col-md-4">
-          <div class="bg-white p-4 shadow-lg rounded text-center">
+          <div class="bg-white p-4 shadow-lg rounded text-center mb-4 mb-lg-0">
             <span class="h2"><i class="fas fa-dollar-sign"></i> ${this.totalPagos(info.datos)}</span>
           </div> 
         </div>
