@@ -10,6 +10,9 @@ td span {
     font-size: 10px;
     text-align: center;
 }
+table, .table {
+    font-size: 0.930125rem;
+}
 .sk-folding-cube {
     margin: 10rem auto;
     width: 40px;

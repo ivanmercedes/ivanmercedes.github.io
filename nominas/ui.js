@@ -8,12 +8,13 @@
       div.className = 'shadow-lg bg-white p-3 animated once zoomIn table-responsive delay-1s rounded';  
       const table = document.createElement('table');
       table.id ='datosPublicos';
-      table.className = 'table table- table- table-hover';
+      table.className = 'table table- table-striped table-hover';
+      
       
       // cabecera
       const cabecera = document.createElement('thead');
       table.appendChild(cabecera);
-      const th = ['Nombre','Departamento','Funcion','Salario'];
+      const th = ['Nombre','Departamento','Funcion','Estatus','Salario'];
       const trTh = document.createElement('tr');
       
       th.forEach(elementos=>{
@@ -31,6 +32,7 @@
         <td>${elementos.Nombre}</td>
         <td>${elementos.Departamento}</td>
         <td>${elementos.Funcion}</td>
+        <td>${elementos.Estatus}</td>
         <td>$ ${new Intl.NumberFormat().format(elementos.Sueldo_Bruto)}</td>
         `;
         tbody.appendChild(tr);
@@ -46,12 +48,12 @@
     mostrarDatosHtml(){
         api.obtenerDatos()
         .then(datos=>{
-            this.cargadoDatos();
-           setTimeout(()=>{
-               app.querySelector('div').remove();
+           // this.cargadoDatos();
+           //setTimeout(()=>{
+             //  app.querySelector('div').remove();
                 this.estadisticas(datos);
                 this.insetarTabla(datos);
-           },3000);
+           //},3000);
           
         });
      }

@@ -3,6 +3,8 @@ const ui = new UI();
 const app = document.getElementById('app');
 
 const opciones = {
+    responsive: true,
+  
     "language": {
         "lengthMenu": "Mostrar _MENU_ registros",
         "zeroRecords": "No se encontraron resultados",
