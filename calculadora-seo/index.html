@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="https://www.erickpardo.com/wp-content/uploads/2018/07/favicon.png" sizes="32x32">
+    <link rel="icon" href="https://www.erickpardo.com/wp-content/uploads/2018/07/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://www.erickpardo.com/wp-content/uploads/2018/07/favicon.png">
+    <meta name="msapplication-TileImage" content="https://www.erickpardo.com/wp-content/uploads/2018/07/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Simulador Google SERP, Calculadora SEO</title>
+  </head>
+  <body>
+    <header id="principal" class="mb-0">
+        <div class="container">
+           
+
+           
+            <div class="row">
+                <div class="col-12 col-md-6 py-4 text-center text-md-left">
+                    <a href="https://www.erickpardo.com/" title="Erick Pardo - Consultor seo">
+                       <img src="assests/logo-erick-pardo.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                  
+                    <div class="bg-white rounded p-3 p-md-4 my-md-3 shadow-sm position-relative">
+                        <div class="justify-content-end d-flex barra">
+                            <i class="fas fa-window-minimize mr-3"></i>
+                            <i class="far fa-window-restore mr-3"></i>
+                            <i class="fas fa-times text-danger "></i>
+                        </div>
+                        <h1 class="mt-6">Simulador Google SERP</h1>
+                        <hr>
+                        <div class="form-group">
+                          <label for="">Título</label>
+                          <span id="titlechar" class="p-1 rounded-pill badge-success text-white">60</span>
+                          <textarea class="form-control" id="in_title" name="in_title" rows="1" cols="70"  onkeyup="titleFunction();" onfocus="if(this.value=='Título con un máximo de 60 caracteres aquí')this.value='';" onblur="if(this.value=='')this.value='Título con un máximo de 60 caracteres aquí';  titleFunction();" tabindex="1" spellcheck="true" style="color: rgb(204, 204, 245); border: 1px solid rgb(128, 128, 230);">Título con un máximo de 60 caracteres aquí</textarea>
+                        </div>
+                        <!--  -->
+
+                        <div class="form-group" id="box_richtext" style="display: none;">
+                            <label for="in_richtext">Fragmentos de texto</label><br>
+                            <textarea class="form-control" id="in_richtext" name="in_richtext" rows="1" cols="54" onkeyup="richTextFunction();" onfocus="this.style.color='#676767'; this.style.border='1px solid #676767';" onblur="this.style.color='#E1E1E1'; this.style.border='1px solid #B3B3B3';" tabindex="2" style="color: rgb(225, 225, 225); border: 1px solid rgb(179, 179, 179);">Revisado por Erick Pardo - 22 de marzo 2020: 282,50</textarea>
+                            <div class="input_subtext" id="subtext_richtext" style="color: rgb(204, 204, 204);"><span class="tip_subtext" id="tip_richtext" style="color: rgb(204, 204, 204);">Ejemplo:&nbsp;&nbsp;</span>Revisado por Erick Pardo - 22 de marzo 2020: 282,50</div>
+                        </div>
+                        <!-- Descripcion -->
+                        <div class="form-group">
+                            <label for="">Descripción</label>
+                            <span id="snippetchar" class="badge-success text-white p-1 rounded-pill">156</span>
+                            <textarea class="form-control" id="in_snippet" name="in_snippet" rows="2" cols="70"  onkeyup="snippetFunction();" onfocus="if(this.value=='Este un ejemplo de descripción de máximo 156 caracteres que se mostrará en las SERPs de Google')this.value='';" onblur="if(this.value=='')this.value='Este un ejemplo de descripción de máximo 156 caracteres que se mostrará en las SERPs de Google';  titleFunction();" tabindex="1" spellcheck="true" style="color: rgb(204, 204, 245); border: 1px solid rgb(128, 128, 230);">Este un ejemplo de descripción de máximo 156 caracteres que se mostrará en las SERPs de Google</textarea>
+                          </div>
+
+                          <!-- url  -->
+                          <div class="form-group">
+                              <label for="">URL</label>
+                            <textarea class="form-control"  id="in_url" name="in_url" rows="1" cols="70" onkeyup="urlFunction();" onfocus="this.style.color='#008000'; this.style.border='1px solid #008000';if(this.value=='www.erickpardo.com/seo.html')this.value='';" onblur="if(this.value=='')this.value='www.erickpardo.com/seo.html'; this.style.color='#CCE6CC'; this.style.border='1px solid #80C080';  urlFunction();" tabindex="5">www.erickpardo.com/seo.html</textarea>
+                            
+                          </div>
+
+                          <!-- negritas -->
+                          <div id="box_bold" style="display: none;" class="form-group ">
+                            <div class="row">
+                              <div class="col-9 col-md-9">
+                                <label for="in_bold">Palabras en negrita</label><br>
+                                <textarea class="form-control" id="in_bold" name="in_bold" rows="4" cols="70" onchange="makeBoldWords(); titleFunction(); snippetFunction(); urlFunction();" onfocus="this.style.color='#000'; this.style.border='1px solid #000';" onblur="this.style.color='#CCC'; this.style.border='1px solid #808080';" tabindex="6" spellcheck="true" style="color: rgb(204, 204, 204); border: 1px solid rgb(128, 128, 128);">ejemplo generalmente  contenido  google</textarea>
+                                <div class="input_subtext" id="subtext_bold" style="color: rgb(204, 204, 204);"><span class="tip_subtext" id="tip_bold" style="color: rgb(204, 204, 204);">Nota:&nbsp;&nbsp;</span>Pegar palabras aquí para simular términos de la consulta en negrita.</div>
+                            </div>
+                            <div class="col-3 col-md-3 align-self-center">
+                                <button class="btn btn-info" onclick="makeBoldWords(); titleFunction(); snippetFunction(); urlFunction();" type="button" tabindex="7">Actualizar</button>
+                            </div>
+                         </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger rounded-pill" onclick="window.location.reload();">Borrar texto</button>
+                      </div>
+                </div>
+                <div class="col-md-5">
+                    
+                    <div class="bg-white rounded p-3 p-md-4 my-md-3 shadow-sm">
+                        <h2 class="h1">Opciones</h2>
+                        <hr>
+
+                        <div class="checks">
+                            <div style="padding:1em; border:1px solid #DDD; -moz-border-radius:4px; -webkit-border-radius:4px;">
+                                <input id="check_serpelements" name="check_serpelements" type="checkbox" onclick="showSerpElements();" tabindex="8">
+                                <label for="check_serpelements"><span style="font-family:Georgia, 'Times New Roman', Times, serif; text-shadow:#CCC 0 1px 1px;"><span style="color: rgb(0, 57, 182);">G</span><span style="color: rgb(196, 18, 0);">o</span><span style="color: rgb(243, 197, 24);">o</span><span style="color: rgb(0, 57, 182);">g</span><span style="color: rgb(48, 167, 47);">l</span><span style="color: rgb(196, 18, 0);">e</span></span> SERP Simulador</label><br>
+                                <!-- <span id="box_topads" style="display: none;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<input id="check_topads" name="check_topads" type="checkbox" onclick="showTopads();" tabindex="9">
+                                    <label for="check_topads"><span style="color:#676767; background-color:#FFF8DD; font-family:Arial, sans-serif; font-size:small;">Anuncios arriba</span></label><br>
+                                </span>
+                                <span id="box_rightads" style="display: none;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<input id="check_rightads" name="check_rightads" type="checkbox" onclick="showRightads();" tabindex="10">
+                                    <label for="check_rightads"><span style="color:#676767; font-family:Arial, sans-serif; font-size:small;">Anuncios derecha</span></label><br>
+                                </span>
+                                <span id="box_organics" style="display: none;">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<input id="check_organics" name="check_organics" type="checkbox" onclick="showOrganics();" tabindex="11">
+                                    <label for="check_organics">Resultados orgánicos</label><br>
+                                </span> -->
+                                <!-- <input id="check_richsnippet" name="check_richsnippet" type="checkbox" onclick="showRichSnippet(); focusRichText();" tabindex="12">
+                                <label for="check_richsnippet"><span style="color:#676767; font-family:Arial, sans-serif; font-size:small;">Añadir texto enriquecido</span></label><br> -->
+                                <!-- <span id="box_stars" style="display: none;">
+                                    <input style="display:block; float:left; margin-left:16px;" id="check_stars" name="check_stars" type="checkbox" onclick="showRichSnippet();" tabindex="13">
+                                    <label for="check_stars" style="display:block; float:left; height:13px; line-height:13px; margin:4px 3px 3px 3px;">
+                                        <span class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                                    </label>
+                                    <br style="clear:both;">
+                                </span>
+                                <div style="display:none">
+                                    <input id="check_cached" name="check_cached" type="checkbox" onclick="showCached();" checked="checked" tabindex="14">
+                                    <label for="check_cached">Show <span style="color:#4272DB; font-family:Arial, sans-serif; font-size:small; cursor:pointer;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">Cached</span></label><br>
+                                    <input id="check_similar" name="check_similar" type="checkbox" onclick="showCached();" checked="checked" tabindex="15">
+                                    <label for="check_similar">Show <span style="color:#4272DB; font-family:Arial, sans-serif; font-size:small; cursor:pointer;" onmouseover="this.style.textDecoration='underline';" onmouseout="this.style.textDecoration='none';">Similar</span></label>
+                                </div> -->
+                                <!-- <input id="check_date" name="check_date" type="checkbox" onclick="useTodaysDate(); showDate(); focusDateValue();" tabindex="16">
+                                <label for="check_date"><span style="font-family: Arial, sans-serif; font-size: small; color: rgb(0, 0, 0);" id="addadate">Añadir fecha</span></label><br>
+                                <input id="check_bold" name="check_bold" type="checkbox" onclick="showBold(); focusBold(); titleFunction(); snippetFunction(); urlFunction();" tabindex="17">
+                                <label for="check_bold"><b>Palabras en negrita</b></label> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mb-5">
+        <article class="my-0">
+            <div class="container">
+                <div class="row">
+                  
+                    <div class="col-md-12" id="out_topsearch" style="display: none;">
+                        <img src="assests/google-bus.png" alt="" class="img-fluid pb-3 full">
+                        <ul class="nav mb-3">
+                            <li class="nav-item">
+                              <a class="nav-link active text-danger border-bottom  border-danger" href="#">Web</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-secondary" href="#">Imágenes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Videos</a>
+                              </li> 
+                              <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Noticias</a>
+                              </li>
+                            
+                              <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#">Herramientas de búsqueda</a>
+                              </li>
+                            
+                              
+                          </ul>
+                          <hr>
+                          <small class="mb-2 text-muted">Aproximadamente 209.000.000 resultados (0,17 segundos) </small>
+                    </div>
+
+
+
+
+                    <div class="col-md-8 mt-4 mt-md-0" id="out_searchresults">
+                        <a href="#" onclick="return false;" class="l"><span id="out_title">Título con un máximo de 60 caracteres aquí</span></a>
+                        <div> <small id="out_url" class="text-success">www.erickpardo.com/seo.html</small></div>
+                        <span class="mofo_date"><span id="out_date" style="display: none;"></span><span id="out_datedots" style="display: none; color: rgb(102, 102, 102);">&nbsp;-&nbsp;</span></span>
+                        <p class="text-muted small" id="out_richsnippet" style="display: none;">
+                            <span class="text-warning small" id="out_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span> <span id="out_richtext">Revisado por Erick Pardo - 22 de marzo 2020: 282,50</span></p>
+                        <p id="out_snippet">Este un ejemplo de descripción de máximo 156 caracteres que se mostrará en las SERPs de Google</p>
+                    </div>
+
+
+                    <div class="col-md-8" id="toporganic" style="display: none;">
+                        <a href="#" onclick="return false;" class="l"><span id="out_title">Título con un máximo de 60 caracteres aquí</span></a>
+                        <div> <small id="out_url" class="text-success">www.erickpardo.com/seo.html</small></div>
+                        <span class="mofo_date"><span id="out_date" style="display: none;"></span><span id="out_datedots" style="display: none; color: rgb(102, 102, 102);">&nbsp;-&nbsp;</span></span>
+                        
+                        <p id="out_snippet">Este un ejemplo de descripción de máximo 156 caracteres que se mostrará en las SERPs de Google</p>
+
+                        <a href="#" onclick="return false;" class="l"><span id="out_title">Título con un máximo de 60 caracteres aquí</span></a>
+                        <div> <small id="out_url" class="text-success">www.erickpardo.com/seo.html</small></div>
+                        <span class="mofo_date"><span id="out_date" style="display: none;"></span><span id="out_datedots" style="display: none; color: rgb(102, 102, 102);">&nbsp;-&nbsp;</span></span>
+                        <p id="out_snippet">Este un ejemplo de descripción de máximo 156 caracteres que se mostrará en las SERPs de Google</p>
+                    </div>
+
+
+
+
+                    <!-- Paginador -->
+                    <div class="col-md-12" id="out_bottomsearch" style="display: none;">
+                        <div class="text-center h2"><span style="color: rgb(0, 57, 182);">G</span><span style="color: rgb(196, 18, 0);">o</span><span style="color: rgb(243, 197, 24);">ooooooo</span><span style="color: rgb(0, 57, 182);">g</span><span style="color: rgb(48, 167, 47);">l</span><span style="color: rgb(196, 18, 0);">e</span></div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                              <li class="page-item"><a class="page-link border-0 font-weight-bold text-dark" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link border-0 " href="#">2</a></li>
+                              <li class="page-item"><a class="page-link border-0 " href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link border-0 " href="#">Siguiente</a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                      <!-- footer google -->
+                <div class="col-md-12" id="footer" style="display: none;">
+                    <img src="assests/google-footer.png" alt="" class="img-fluid pb-3 full">
+                </div>
+                </div>
+            
+                
+
+              
+            </div>
+
+
+
+    
+
+      
+
+   
+
+
+
+                
+           
+
+
+
+        </article>
+    </main>
+
+      <!-- inicia footer -->
+      <footer class="btn-danger py-3">
+        <div id="scroll" class="top position-fixed " style="display: none;">
+            <a href="#top" class="text-white rounded-circle rounded-circle bg-verde"><i class="fas fa-chevron-up"></i></a>
+          </div>
+        <div class="container">
+        <div class="row justify-content-center">
+            <!-- logo -->
+            <div class="col-md-4 text-center text-center text-md-left">
+                <figure>
+                    <img src="assests/logo-erick-pardo.png" alt=""  class="img-fluid">
+                </figure>
+                <p class="small mt-0">Todos los derechos reservados © 2020</p>
+            </div>
+
+            <div class="col-md-6">
+                <div class="redes mr-md-5 mt-2 text-center text-md-right">
+                    <a class="bg-white rounded-circle mr-2" target="_blank" href="https://www.facebook.com/epardob"><i class="fab fa-facebook-f text-danger"></i></a>
+                    <a class="bg-white rounded-circle mr-2" target="_blank" href="https://twitter.com/ErickPardo"><i class="fab fa-twitter text-danger"></i></a>
+                    <a class="bg-white rounded-circle mr-2" target="_blank" href="https://www.linkedin.com/in/erickpardo/"><i class="fab fa-linkedin-in text-danger"></i></a>
+                    <a class="bg-white rounded-circle mr-2" target="_blank" href="https://www.erickpardo.com/blog/"><i class="fab fa-blogger-b text-danger"></i></a>
+                    
+                </div>
+            </div>
+         </div>  
+        </div> 
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/90f8c25e30.js" crossorigin="anonymous"></script>
+    <script src="assests/seo.js"></script>
+  </body>
+</html>

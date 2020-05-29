@@ -1,0 +1,78 @@
+header#principal {
+    background-image: url(assests/img.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+}
+header#principal::before {
+    content: '';
+    background-image: -moz-linear-gradient(top,rgba(223,44,92,.7) 0,#532656 100%);
+    background-image: -webkit-linear-gradient(top,rgba(223,44,92,.7) 0,#532656 100%);
+    background-image: linear-gradient(to bottom,rgba(223,44,92,.7) 0,#532656 100%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+header#principal::after {
+    position: absolute;
+    content: '';
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+    background-color: #fff;
+    z-index: 0;
+    height: 155px;
+    width: 100%;
+    bottom: 0;
+}
+.row,main{
+    z-index: 1;
+    position: relative;
+}
+.full{
+    min-width: 100%;
+}
+.btn-danger {
+    background-color: #e42c5c!important;
+}
+em {
+    font-weight: bold;
+    font-style: normal;
+}
+.form-group {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: bold;
+}
+h1, .h1 {
+    font-size: 1.2rem;
+}
+.rounded-circle {
+    padding: .4rem .7rem;
+}
+.mt-6{
+    margin-top: 1rem;
+}
+.barra{
+    background: #f1f1f1;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: .5rem;
+    border-top-right-radius: .4rem;
+    border-top-left-radius: .4rem;
+}
+#out_searchresults a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    /* width: 28.4rem; */
+    display: block;
+}
+@media (max-width: 768px){
+    h1,.h1{
+        font-size: 1rem;
+        
+    }
+}
