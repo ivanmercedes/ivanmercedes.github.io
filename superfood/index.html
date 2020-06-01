@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha256-4hqlsNP9KM6+2eA8VUT0kk4RsMRTeS7QGHIM+MZ5sLY=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+    <title>Titulo</title>
+    <meta name="description" content="descripción">
+
+    <meta property="og:image" content="portada.jpg" />
+
+    <style>
+        body{
+            background-color: #fcf4e5;
+            font-family: MontserratL;
+        }
+        @font-face{
+            font-family:Montserrat;src:url(font/Montserrat-Bold_4.otf);
+            font-display: auto;
+         }
+         @font-face{
+            font-family:MontserratL;src:url(font/Montserrat-Light_4.otf);
+            font-display: auto;
+         }
+        ::-webkit-scrollbar-thumb{background:#ffc107;}
+        ::-webkit-scrollbar{width:8px;}
+        ::-webkit-scrollbar-track{background:#5f3014;}
+        ::selection {background: #46200a;color: #fff;text-shadow: none;}
+         .l {
+           font-family: MontserratL !important;
+         }
+         b,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,strong{
+            font-family: Montserrat;
+         }
+        .btn-danger{
+            background-color: #46200a !important;
+        }
+        .text-danger{
+            color:  #46200a !important;;
+        }
+        .salto{
+    display: block;
+}
+.border-danger {
+    border-color: #46200a!important;
+}
+.border {
+    border: 3px solid #46200a!important;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 18rem;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width: 360px) and (max-width: 1024px){
+    .mt {
+    margin-top: -4rem !important;
+}
+    .head{
+
+    padding: .1rem !important;
+}
+.lh4 {
+    font-size: .8rem;
+}
+
+.head .h1 {
+    font-size: 1.5rem;
+}
+    .navbar-brand{
+    margin-left: 4rem;
+}
+.navbar-brand img {
+    width: 50%;
+}
+.carousel-item {
+    height: 40rem;
+
+}
+.carousel-item img {
+    min-width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+.salto{
+    display: inline;
+}
+
+.carousel-caption {
+    top: 8rem;
+}
+
+.carousel-caption h1,.carousel-caption h2 {
+    font-size: 1.9rem;
+}
+.carousel-caption p {
+    font-size: 16px;
+}
+#carousel{
+    margin-top: -9.5rem !important;
+}
+}
+.mt{
+    margin-top: -10rem;
+   }
+@media (min-width: 568px) and (max-width: 1200px){
+    .mt {
+    margin-top: -4rem;
+}
+    .lh4 {
+    font-size: 1.4rem;
+}
+.head .h1 {
+    font-size: 2.5rem;
+}
+    .carousel-caption {
+        top: 8rem;
+ }
+ .salto{
+    display: block;
+}
+
+}
+.align-top {
+    vertical-align: top!important;
+    margin-top: -1rem;
+}
+.head{
+    background-image: url(img/forma.png);
+    background-size: cover;
+    padding: .3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video{
+    background-image: url(img/video.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30rem;
+}
+
+.nuestros{
+    background-image: url(img/bg-ex.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60rem;
+     
+    
+}
+.center .slick-slide {
+    opacity: 0.4;
+    transition: all 300ms ease;
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+}
+
+.center .slick-center {
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    opacity: 1 !important;
+    transition: all 300ms ease;
+    transform: scale(1.08);
+}
+.texto{
+    display: none;
+    transition: all 300ms ease;
+}
+.texto p{
+    font-size: .8rem;
+}
+.center .slick-center .texto{
+    display: block;
+    transition: all 300ms ease;
+}
+.video{
+    cursor: pointer;
+}
+.video:hover #hover {
+    zoom: 0;
+    
+    transform: scale(1.1);
+    transition: all 300ms ease;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .6rem;
+}
+.s{
+    font-size: 2.4rem;
+}
+
+.slick-next, .slick-prev {
+    top: 35%;
+    width: 30px;
+    height: 30px;
+  
+}
+.slick-prev {
+    left: -50px;
+}
+.slick-next {
+    right: -50px;
+}
+.bor::after{
+    content: '';
+    width: 100px;
+    height: 6px;
+    background-color: #fcbd1f;
+    display: block;
+}
+.small, small {
+    font-size: 90%;
+    font-weight: 400;
+}
+.contacto{
+    background-image: url(img/trator.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.py-6{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.border-white {
+    border-color: #fff!important;
+    border: 2px solid;
+}
+    </style>
+
+  </head>
+  <body>
+     <header>
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-black" style="z-index: 9;">
+            <!-- contaier -->
+            <div class="container">
+                  <a class="navbar-brand" href="javascript:void(0)">
+                      <img class="d-inline-block align-top img-fluid lazy" data-src="img/logo.jpg" src="img/min/logo.min.jpg">
+                    </a>
+                  
+                    <div class=" text-md-right mt">
+                       <a href="#" target="_blank" class="text-danger mr-2"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#" target="_blank" class="text-danger"><i class="fab fa-instagram"></i></a>
+                    </div>
+                
+           </div>
+          <!-- ./container -->
+        </nav> 
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" style="margin-top: -18.4rem;">
+  
+            <!-- imagenes -->
+             <div class="carousel-inner">
+              <div class="carousel-item ">
+                <img class="d-block w-100 lazy" data-src="img/slider1.png" src="img/min/slider1.jpg" alt="QUINUA GELATINIZADA ORGÁNICA">
+                 <div class="container">
+                    <div class="carousel-caption text-left col-lg-6 col-8">
+                        <h1 class="text-white font-weight-bold">QUINUA <span class="text-danger salto">GELATINIZADA</span> ORGÁNICA</h1>
+                        <p class="text-white"><b class="salto">Biodiversidad y la sabiduria de nuestros</b><b>ancestros</b>,se fusionan para ver nacer <span class="salto">milagros naturales, alimentos sagrados.</span></p>
+                        <a href="#" class="btn  btn-danger text-warning border-0 rounded-0 font-weight-bold px-3">CONOCE MÁS</a>
+                    </div>
+              </div>
+              </div>
+              <div class="carousel-item active">
+                <img class="d-block w-100 lazy" data-src="img/slider2.png" src="img/min/slider2.jpg"  alt="SUPER FOODS DEL PERÚ">
+                <div class="container">
+                <div class="carousel-caption text-left col-lg-6 col-8">
+                    <h1 class="text-white font-weight-bold">SUPER <span class="text-danger salto">FOODS</span> DEL PERÚ</h1>
+                    <p class="text-white"><b class="salto">Biodiversidad y la sabiduria de nuestros</b><b>ancestros</b>,se fusionan para ver nacer <span class="salto">milagros naturales, alimentos sagrados.</span></p>
+                    <a href="#" class="btn  btn-danger text-warning border-0 rounded-0 font-weight-bold px-3">CONOCE MÁS</a>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 lazy" data-src="img/slider3.png"  src="img/min/slider3.jpg"  alt="MACA GELATINIZADA ORGÁNICA">
+                 <div class="container">
+                    <div class="carousel-caption text-left col-lg-6 col-8">
+                        <h1 class="text-white font-weight-bold">MACA <span class="text-danger salto">GELATINIZADA</span> ORGÁNICA</h1>
+                        <p class="text-white"><b class="salto">Biodiversidad y la sabiduria de nuestros</b><b>ancestros</b>,se fusionan para ver nacer <span class="salto">milagros naturales, alimentos sagrados.</span></p>
+                        <a href="#" class="btn  btn-danger text-warning border-0 rounded-0 font-weight-bold px-3">CONOCE MÁS</a>
+                    </div>
+              </div>
+              </div>
+            </div>
+            <!-- ./ imagenes -->
+         </div>
+     </header>
+
+     <main>
+        <section class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center order-0 order-md-0">
+                       
+                        <header class="head px-4 text-danger">
+                            <div class="topheader text-center text-danger ">
+                                <h4 class="l lh4">Beneficios de los</h4>
+                            </div>
+                            <h2 class="h1 text-center font-weight-bold">SUPERFOODS</h2>
+                        </header>
+                        <div class="my-4 text-danger">
+                            <p>Son alimentos <b>100% naturales</b> que poseen altos niveles de vitaminas. minerales, antioxidantes, omega 3 y proteinas en tan solo pequenas porciones. Tienen la funcion de proporcionar los nutrientes necesarios, incluido aquellos que nuestro organismo no produce por si solo, para un mejor funcionamiento de nuestro cuerpo</p>
+
+                           <div class="extras d-flex">
+                               <img src="img/bolita.png" alt="" width="50" height="30" class="align-self-center mr-4">
+                            <p><strong>Base de una vida sana</strong><br>
+                                Ricos en nutrientes como vitaminas, minerales y antioxidantes, con propiedas curativas extraordinarias.</p>
+
+                           </div>
+
+                           <div class="extras extras d-flex">
+                            <img src="img/bolita.png" alt="" width="50" height="30" class="align-self-center mr-4">
+                            <p><strong> Alimentos milenarios</strong><br>
+                                    Se han utilizados durante miles de años por los pueblos indígenas para sanar la mente y el cuerpo.</p>
+                            </div>
+                               
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-1 order-md-1">
+                        <img  data-src="img/anciano.png"  src="img/min/anciano.jpg"  alt="" class="img-fluid lazy">
+                    </div>
+
+                    <div class="col-md-6 mt-5 text-left order-4 order-md-3">
+                        <img data-src="img/doble.png" src="img/min/doble.jpg" alt="" class="img-fluid lazy">
+                    </div>
+                    <div class="col-md-6 align-self-center text-danger order-3 order-md-4">
+                        <h3 class="h4 mb-4">Alimentos sagrados, legado ancestral para la humanidad.</h3>
+                        <p>Hay alimentos que han existido por siglos, incluso milenios. Alimentos sagrados con bondades excepcionales que pueden acabar con la obesidad y desnutrición en el planeta, hoy por hoy conocidos como <b>superfoods</b>. Todo comienza con la poderosa convicción de promover y difundir este poderoso legado de nuestros ancestros.</p>
+
+                        <p><b>Hoy somos la marca que desarrolla e impulsa el consumo de alimentos ancestrales</b>, milagros naturales de la Pachamama que, gracias a la sabiduría de los antiguos peruanos y a la riqueza de una tierra sinónimo de biodiversidad, son un verdadero tesoro alimenticio invaluable para la humanidad.</p>
+
+                        <p>¿Consultas? <img src="img/flecha-marron.png" alt="" class="img-fluid mx-3"> <a target="_blank" href="https://api.whatsapp.com/send?phone=+51970632434&text=%C2%A1Hola%21%20El%20motivo%20por%20el%20que%20mando%20mensaje%20de%20contacto%20es..." class="btn btn-success rounded-0 mr-3"><i class="fab fa-whatsapp"></i> 970 632 434</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="video">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100">
+                    <div id="hover" class="col-3 col-md-6 text-center align-self-center">
+                        <img src="img/play.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="nuestros">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100">
+                    <div  class=" col-md-6 text-center align-self-center">
+                        <header class="head px-4 text-danger">
+                            <div class="topheader text-center text-danger ">
+                                <h4 class="l lh4">Nuestros</h4>
+                            </div>
+                            <h2 class="h1 text-center font-weight-bold s">PRODUCTOS</h2>
+                        </header>
+                    </div>
+                    <div class="col-md-8 mt-5">
+                        <div class="center">
+                            <div><img src="img/cacao.png" alt="" class="img-fluid">
+                             <div class="texto text-danger text-center">
+                                <h4>Cacao en Polvo  Orgánico x 200g</h4>
+                                    <p><b>Beneficios:</b><br>
+                                        • Rico en antioxidantes y minerales.
+                                        • Rico en ácidos grasos esenciales
+                                        • Antidepresivo y afrodisiaco.
+                                        • Prevención de problemas cardiovasculares.</p>
+                             </div>
+                            </div>
+                            <div><img src="img/maca.png" alt="" class="img-fluid">
+                                <div class="texto text-danger text-center">
+                                    <h4>Maca Gelatinizada Orgánica x 200g</h4>
+                                        <p><b>Beneficios:</b><br>
+                                            • Alto contenido de aminoácidos, carbohidratos, minerales como calcio, fósforo, zinc, magnesio, hierro. • Alto contenido de vitamina B1, B2, B3. • Contenido de cobre, selenio, zinc y hierro.</p>
+                                 </div>
+                            </div>
+                            <div><img src="img/quinua.png" alt="" class="img-fluid">
+                                <div class="texto text-danger text-center">
+                                    <h4>Quinua Gelatinizada Orgánica x 200g</h4>
+                                        <p><b>Beneficios:</b><br>
+                                            Alto contenido de aminoácidos esenciales y carbohidratos.
+                                            • Alto contenido de micronutrientes, incluidos Omega 3 y 6; minerales, potasio, magnesio, fósforo y zinc; y vitaminas, complejo B, vitamina E, B1, B2 y niacina.</p>
+                                 </div>
+                                </div>
+                         
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="preguntas my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 align-self-center order-0 order-md-0">
+                        <header class="bor">
+                            <small>Preguntas</small>
+                            <h2>FRECUENTES</h2>
+                        </header>
+
+                         
+                            <div class="listaPregunta mt-5">
+                                <div class="accordion" id="preguntasaccordion">
+                                    <!-- Pregunta 1 -->
+                                    <div class="text-danger">
+                                      <div id="headingOne">
+                                        <h2 class="my-1">
+                                          <button class="btn text-danger btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                           <span class="bg-warning py-1 px-2 rounded-circle mr-3"><i class="fas fa-plus"></i></span> ¿Cómo comprar los productos?
+                                          </button>
+                                        </h2>
+                                      </div>
+                                  
+                                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#preguntasaccordion">
+                                        <div class="card-body">
+                                            Son alimentos <b>100% naturales</b> que poseen altos niveles de vitaminas, minerales, antioxidantes, omega 3 y proteínas en tan solo pequeñas porciones. Tienen la función de proporcionar los nutrientes necesarios.
+                                        </div>
+                                      </div>
+                                    </div>
+
+
+                                    <!-- Pregunta 2 -->
+                                    <div class="text-danger">
+                                        <div id="heading2">
+                                          <h2 class="my-1">
+                                            <button class="btn text-danger btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                <span class="bg-warning py-1 px-2 rounded-circle mr-3"><i class="fas fa-plus"></i></span>¿Cómo comprar los productos?
+                                            </button>
+                                          </h2>
+                                        </div>
+                                    
+                                        <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#preguntasaccordion">
+                                          <div class="card-body">
+                                              Son alimentos <b>100% naturales</b> que poseen altos niveles de vitaminas, minerales, antioxidantes, omega 3 y proteínas en tan solo pequeñas porciones. Tienen la función de proporcionar los nutrientes necesarios.
+                                          </div>
+                                        </div>
+                                      </div>
+
+
+                                      <!-- Pregunta 3 -->
+                                      <div class="text-danger">
+                                        <div id="heading3">
+                                          <h2 class="my-1">
+                                            <button class="btn text-danger btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                <span class="bg-warning py-1 px-2 rounded-circle mr-3"><i class="fas fa-plus"></i></span>¿Cómo comprar los productos?
+                                            </button>
+                                          </h2>
+                                        </div>
+                                    
+                                        <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#preguntasaccordion">
+                                          <div class="card-body">
+                                              Son alimentos <b>100% naturales</b> que poseen altos niveles de vitaminas, minerales, antioxidantes, omega 3 y proteínas en tan solo pequeñas porciones. Tienen la función de proporcionar los nutrientes necesarios.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <!-- Pregunta  4 -->
+                                      <div class="text-danger">
+                                        <div id="heading4">
+                                          <h2 class="my-1">
+                                            <button class="btn text-danger btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                <span class="bg-warning py-1 px-2 rounded-circle mr-3"><i class="fas fa-plus"></i></span>¿Cómo comprar los productos?
+                                            </button>
+                                          </h2>
+                                        </div>
+                                    
+                                        <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#preguntasaccordion">
+                                          <div class="card-body">
+                                              Son alimentos <b>100% naturales</b> que poseen altos niveles de vitaminas, minerales, antioxidantes, omega 3 y proteínas en tan solo pequeñas porciones. Tienen la función de proporcionar los nutrientes necesarios.
+                                          </div>
+                                        </div>
+                                      </div>                                      
+       
+            
+                                  </div>
+                            </div>
+
+
+                    </div>
+                    <div class="col-md-6 order-1 order-md-1 mt-4 mt-md-0">
+                        <img data-src="img/plato.png" src="img/min/plato.jpg" alt="" class="img-fluid lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto my-5 py-6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 align-self-center mb-4 mb-md-0">
+                        <header class="bor text-white">
+                            <small>Mantengámonos</small>
+                            <h2>EN CONTACTO</h2>
+                        </header>
+                    </div>
+                    <div class="col-md-4">
+                        <form>
+                            <div class="form-group">
+                              <input type="text" class="form-control rounded-0" id="nombre" placeholder="NOMBRE" required>
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control rounded-0" id="correo" placeholder="E-EMAIL" required>
+                            </div>
+ 
+                            <button type="submit" class="btn btn-warning font-weight-bold rounded-0 px-4">ENVIAR</button>
+                          </form>
+                    </div>
+
+                    <div class="col-md-5 text-center mt-4 mt-md-0">
+                        <a href="tel:015749136">
+                            <div class="bg-warning text-center py-3 mr-md-3 ml-5 ml-md-0  mt-4 mt-md-0" style="width: 195px;float: left;">
+                                <span class=" border-white p-3 d-inline-block text-white"><i class="fas fa-phone"></i></span>
+                                <p class="text-danger mt-2">Llámenos al<br> <b>(01) 574 - 9136</b></p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:sales@inkaforest.com">
+                            <div class="bg-warning text-center py-3 ml-5 ml-md-0 mt-4 mt-md-0" style="width: 195px;float: left;">
+                                <span class=" border-white p-3 d-inline-block text-white"><i class="fas fa-envelope"></i></span>
+                                <p class="text-danger mt-2">Envíenos un email a<br> <b>sales@inkaforest.com</b></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+     <footer class="py-1">
+       <div class="container">
+         <div class="row">
+             <div class="col-md-8 text-center text-md-left order-1 order-md-0 text-danger">
+                <p>2020 © Copyrights INKA FOREST - <a target="_blank" href="terminos-y-condiciones.html" class="text-danger">Términos y condiciones</a> / <a  target="_blank" href="politicas-de-privacidad.html" class="text-danger">Políticas de privacidad</a></p>
+             </div>
+             <div class="col-md-4">
+                 <div class="text-center text-md-right order-0 order-md-1">
+                    <a href="#" target="_blank" class="text-danger mr-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" class="text-danger"><i class="fab fa-instagram"></i></a>
+                 </div>
+             </div>
+         </div>
+       </div>
+     </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/90f8c25e30.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+		
+    <script>
+     var lazyLoadInstance = new LazyLoad({elements_selector: ".lazy",unobserve_entered: true});
+
+        $(function() {
+            $(document).on('submit', 'form', function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var name = $this.find('input[type="text"]').val();
+                var email = $this.find('input[type="email"]').val();
+                $this.find('button').prop('disabled', true);
+                $this.find('button').html('<i class="fas fa-spinner fa-pulse mr-1"></i> Enviando');
+                $.post( "correo.php", { nombre: name, email: email }
+                )
+                .done(function(data) {
+                    if( data == 1 ) {
+                        window.location.href = "gracias.html";
+                    } else {
+                    alert( "Error. Inténtelo nuevamente" );
+                    }
+                })
+                .fail(function() {
+                    alert( "Error. Inténtelo nuevamente" );
+                })
+                .always(function() {
+                    $this.find('input').prop('disabled', false);
+                });
+                
+            });
+        });
+
+        $('.center').slick({
+            prevArrow:"<img class='a-left control-c prev slick-prev' src='img/left.png'>",
+            nextArrow:"<img class='a-right control-c next slick-next' src='img/right.png'>",
+            centerMode: true,
+            centerPadding: '200px',
+            slidesToShow: 1,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '90px',
+                    slidesToShow: 1
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '60px',
+                    slidesToShow: 1
+                }
+                }
+            ]
+            });
+    </script>
+  </body>
+</html>
